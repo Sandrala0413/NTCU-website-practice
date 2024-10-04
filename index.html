@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="loginPageCSS.css">
+    <script src="https://kit.fontawesome.com/86e57103de.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="title">
+            <img src="title1.png">
+            <div>login</div>
+            <img src="title2.png">
+        </div>
+        <div class="input_block">
+            <div class="account">
+                <input type="text" id="acc" placeholder="Account">
+            </div>
+
+            <div class="password">
+                <input type="password" id="pw" placeholder="Password">
+                <i class="fa-regular fa-eye" id="eye" onclick="hidePassword()"></i>
+            </div>
+
+            <div class="verify">
+                <input type="text" id="ver" placeholder="Verify">
+                <canvas id="verifyCanvas" height="30px" width="60px"></canvas>
+                <i class="fa-solid fa-arrow-rotate-right" id="refresh"></i>
+                <!-- <button id="refresh">refresh</button> -->
+                <script src="loginPageJS.js"> </script>
+            </div>
+        </div>
+        <div class="button">
+            <img src="bowlEmpty.png" onclick="button()" id="bowl" title="提交">
+            <a id="reset" href="loginPage.html">重設</a>
+        </div>
+        
+    </div>
+
+</body>
+
+</html>
